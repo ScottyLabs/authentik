@@ -8,6 +8,7 @@ USER root
 RUN rm /web/dist/custom.css
 COPY custom.css /web/dist/custom.css
 RUN cat /web/dist/custom.css
+COPY custom.css /web/dist/assets/slabs_custom.css
 COPY custom.css /web/dist/slabs_custom.css
 
 ARG AUTHENTIK_REDIS__HOST

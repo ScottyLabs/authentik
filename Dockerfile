@@ -6,6 +6,9 @@ COPY icon_left_brand.png /web/dist/assets/icons/slabs_icon_left_brand.png
 
 USER root
 RUN rm /web/dist/custom.css
+COPY custom.css /web/dist/custom.css
+RUN cat /web/dist/custom.css
+COPY custom.css /web/dist/slabs_custom.css
 
 ARG AUTHENTIK_REDIS__HOST
 ARG AUTHENTIK_REDIS__PORT

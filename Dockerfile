@@ -5,11 +5,10 @@ COPY icon.png /web/dist/assets/icons/slabs_icon.png
 COPY icon_left_brand.png /web/dist/assets/icons/slabs_icon_left_brand.png
 
 USER root
-RUN rm /web/dist/custom.css
 COPY custom.css /web/dist/custom.css
-RUN cat /web/dist/custom.css
-COPY custom.css /web/dist/assets/slabs_custom.css
-COPY custom.css /web/dist/slabs_custom.css
+
+# Set the owner of the custom.css file to the user running the container
+RUN chown authentik:authentik /web/dist/custom.css
 
 ARG AUTHENTIK_REDIS__HOST
 ARG AUTHENTIK_REDIS__PORT
@@ -32,5 +31,7 @@ ENV AUTHENTIK_POSTGRESQL__PASSWORD=${AUTHENTIK_POSTGRESQL__PASSWORD}
 ENV AUTHENTIK_POSTGRESQL__PORT=${AUTHENTIK_POSTGRESQL__PORT}
 ENV AUTHENTIK_SECRET_KEY=${AUTHENTIK_SECRET_KEY}
 ENV PORT=${PORT}
+
+USER authentik
 
 CMD ["server"]

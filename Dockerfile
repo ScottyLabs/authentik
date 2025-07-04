@@ -4,6 +4,8 @@ COPY flow_background.png /web/dist/assets/images/slabs_flow_background.png
 COPY icon.png /web/dist/assets/icons/slabs_icon.png
 COPY icon_left_brand.png /web/dist/assets/icons/slabs_icon_left_brand.png
 
+USER root
+RUN rm /web/dist/custom.css
 COPY custom.css /web/dist/custom.css
 
 ARG AUTHENTIK_REDIS__HOST

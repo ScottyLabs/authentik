@@ -1,8 +1,8 @@
 FROM ghcr.io/goauthentik/server:latest
 
-COPY flow_background.png /static/dist/assets/images/flow_background.png
-COPY icon.png /static/dist/assets/icons/icon.png
-COPY icon_left_brand.png /static/dist/assets/icons/icon_left_brand.png
+COPY flow_background.png /web/dist/assets/images/flow_background.png
+COPY icon.png /web/static/dist/assets/icons/icon.png
+COPY icon_left_brand.png /web/static/dist/assets/icons/icon_left_brand.png
 
 ARG AUTHENTIK_REDIS__HOST
 ARG AUTHENTIK_REDIS__PORT

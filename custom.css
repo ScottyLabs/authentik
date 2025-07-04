@@ -3,3 +3,6 @@
     background: aqua;
 }
 
+.pf-c-button.pf-m-block {
+    text-align: left;
+}

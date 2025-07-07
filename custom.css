@@ -20,7 +20,7 @@
     padding: 0px;
     box-shadow: 0px 2px 6px 0px #00000033;
     max-width: 325px;
-    background-color: light-dark(#FFF, #2C2C2C);
+    background-color: light-dark(red, blue);
     position: relative;
     align-self: center;
 }
@@ -71,7 +71,12 @@
     border: none;
     border-radius: 50px;
     color: light-dark(#000, #FFF);
-    border: 5px solid linear-gradient(103.19deg, #9B7FDB 29.42%, #0E96D1 100.34%);
+    background: #FFF;
+    box-shadow: 0px 2px 6px 0px #00000033;
+}
+.pf-c-login__main-footer-links-item:hover {
+    background: linear-gradient(103.19deg, #9B7FDB 29.42%, #0E96D1 100.34%);
+    color: light-dark(#FFF, #E0E0E0);
 }
 .pf-c-form__label-text {
     color: light-dark(#000, #FFF);

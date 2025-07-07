@@ -12,11 +12,14 @@
     --ak-light-accent: #9B7FDB;
     --ak-light-accent-secondary: #0E96D1;
     --ak-light-accent-tertiary: #E0E0E0;
-    --pf-c-form__group--m-action--MarginTop: 6px;
 }
 
 svg {
     fill: light-dark(#000, #FFF);
+}
+
+.pf-c-form__group.pf-m-action {
+    margin-top: 6px;
 }
 
 .pf-c-login__main {

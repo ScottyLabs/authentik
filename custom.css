@@ -1,8 +1,58 @@
 .pf-c-login__main {
-    border-radius: 25px;
-    background: aqua;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    padding: 0px;
+    box-shadow: 0px 2px 6px 0px #00000033;
+    max-width: 325px;
+    background-color: light-dark(#FFF, #2C2C2C);
+}
+
+.pf-c-page__drawer {
+    background-color: light-dark(#FFF, #1E1E1E);
 }
 
 .pf-c-button.pf-m-block {
     text-align: left;
+}
+
+.pf-c-list pf-m-inline {
+    display: none;
+}
+
+.pf-c-background-image {
+    display: none;
+}
+
+.pf-c-login__main .pf-c-login__main-body {
+    padding: 0;
+}
+
+.pf-c-title .pf-m-3xl {
+    color: light-dark(#000, #FFF);
+    font-weight: 600;
+}
+
+.pf-c-form__group {
+    color: light-dark(#000, #FFF);
+}
+
+.pf-c-form-control {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 0px;
+    box-shadow: 0px 2px 6px 0px #00000033;
+    background-color: light-dark(#FFF, #2C2C2C);
+}
+
+.pf-c-button .pf-m-primary .pf-m-block {
+    border-radius: 12px;
+    padding: 0px;
+    box-shadow: 0px 2px 6px 0px #00000033;
+    background: linear-gradient(103.19deg, #9B7FDB 29.42%, #0E96D1 100.34%), #1E1E1E;
+    color: light-dark(#FFF, #E0E0E0);
+}
+
+.pf-c-login__main-footer-links-item {
+    color: light-dark(#000, #FFF);
+    background: linear-gradient(103.19deg, #9B7FDB 29.42%, #0E96D1 100.34%), #1E1E1E;
 }

@@ -15,7 +15,7 @@
     text-align: left;
 }
 
-.pf-c-list pf-m-inline {
+.pf-c-list.pf-m-inline {
     display: none;
 }
 
@@ -23,11 +23,11 @@
     display: none;
 }
 
-.pf-c-login__main .pf-c-login__main-body {
+.pf-c-login__main.pf-c-login__main-body {
     padding: 0;
 }
 
-.pf-c-title .pf-m-3xl {
+.pf-c-title.pf-m-3xl {
     color: light-dark(#000, #FFF);
     font-weight: 600;
 }
@@ -44,7 +44,7 @@
     background-color: light-dark(#FFF, #2C2C2C);
 }
 
-.pf-c-button .pf-m-primary .pf-m-block {
+.pf-c-button.pf-m-primary.pf-m-block {
     border-radius: 12px;
     padding: 0px;
     box-shadow: 0px 2px 6px 0px #00000033;

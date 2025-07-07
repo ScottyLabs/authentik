@@ -1,18 +1,15 @@
 .pf-c-login__main {
     border-radius: 12px;
-    border: 1px solid #ccc;
     padding: 0px;
     box-shadow: 0px 2px 6px 0px #00000033;
     max-width: 325px;
     background-color: light-dark(#FFF, #2C2C2C);
+    position: relative;
+    align-self: center;
 }
 
 .pf-c-page__drawer {
     background-color: light-dark(#FFF, #1E1E1E);
-}
-
-.pf-c-button.pf-m-block {
-    text-align: left;
 }
 
 .pf-c-list.pf-m-inline {
@@ -27,9 +24,8 @@
     padding: 0;
 }
 
-.pf-c-title.pf-m-3xl {
+.pf-c-title {
     color: light-dark(#000, #FFF);
-    font-weight: 600;
 }
 
 .pf-c-form__group {
@@ -37,15 +33,16 @@
 }
 
 .pf-c-form-control {
-    border: 1px solid #ccc;
     border-radius: 12px;
     padding: 0px;
     box-shadow: 0px 2px 6px 0px #00000033;
     background-color: light-dark(#FFF, #2C2C2C);
+    padding: 12px;
+
 }
 
-.pf-c-button.pf-m-primary.pf-m-block {
-    border-radius: 12px;
+.pf-c-button.pf-m-block {
+    border-radius: 50px;
     padding: 0px;
     box-shadow: 0px 2px 6px 0px #00000033;
     background: linear-gradient(103.19deg, #9B7FDB 29.42%, #0E96D1 100.34%), #1E1E1E;
@@ -53,6 +50,10 @@
 }
 
 .pf-c-login__main-footer-links-item {
+    border-radius: 50px;
     color: light-dark(#000, #FFF);
-    background: linear-gradient(103.19deg, #9B7FDB 29.42%, #0E96D1 100.34%), #1E1E1E;
+    border: 5px solid linear-gradient(103.19deg, #9B7FDB 29.42%, #0E96D1 100.34%);
+}
+.pf-c-form__label-text {
+    color: light-dark(#000, #FFF);
 }

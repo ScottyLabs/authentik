@@ -75,9 +75,13 @@
     box-shadow: 0px 2px 6px 0px #00000033;
 }
 .pf-c-login__main-footer-links-item:hover {
-    background: linear-gradient(103.19deg, #9B7FDB 29.42%, #0E96D1 100.34%);
+    box-shadow: 3px 3px 3px 3px linear-gradient(103.19deg, #9B7FDB 29.42%, #0E96D1 100.34%);
     color: light-dark(#FFF, #E0E0E0);
 }
 .pf-c-form__label-text {
     color: light-dark(#000, #FFF);
+}
+
+.pf-c-button.pf-m-link {
+    align-items: center;;
 }

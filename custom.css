@@ -14,8 +14,9 @@
     --ak-light-accent-tertiary: #E0E0E0;
 }
 
-svg {
-    fill: light-dark(#000, #FFF);
+.pf-c-login__main-footer-links-item img, .pf-c-login__main-footer-links-item .fas
+{
+    filter: invert(0);
 }
 
 .pf-c-form__group.pf-m-action {
@@ -64,7 +65,7 @@ svg {
     box-shadow: 0px 2px 6px 0px #00000033;
     background-color: light-dark(#FFF, #2C2C2C);
     padding-left: 12px;
-    height: 30px;
+    height: 24px;
 }
 
 .pf-c-button.pf-m-block {
@@ -73,10 +74,11 @@ svg {
     padding: 0px;
     box-shadow: 0px 2px 6px 0px #00000033;
     color: light-dark(#FFF, #E0E0E0);
+    background: #FFF;
     min-height: 48px;
 }
 .pf-c-button.pf-m-block:hover {
-    box-shadow: 3px 3px 3px 3px #0E96D1;
+    box-shadow: 0px 0px 5px 5px #0E96D199;
     color: light-dark(#FFF, #E0E0E0);
 }
 
@@ -85,12 +87,12 @@ svg {
     border-radius: 50px;
     color: light-dark(#000, #FFF);
     background: #FFF;
+    background-color: #FFF;
     box-shadow: 0px 2px 6px 0px #00000033;
-    min-height: 48px;
     padding-top: 12px;
 }
 .pf-c-login__main-footer-links-item:hover {
-    box-shadow: 3px 3px 3px 3px #9B7FDB;
+    box-shadow: 0px 0px 5px 5px #9B7FDB99;
     color: light-dark(#FFF, #E0E0E0);
 }
 .pf-c-form__label-text {

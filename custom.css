@@ -73,13 +73,12 @@
     border-radius: 50px;
     padding: 0px;
     box-shadow: 0px 2px 6px 0px #00000033;
-    color: light-dark(#FFF, #E0E0E0);
+    color: light-dark(#000, #E0E0E0);
     background: #FFF;
     min-height: 48px;
 }
 .pf-c-button.pf-m-block:hover {
-    box-shadow: 0px 0px 5px 5px #0E96D199;
-    color: light-dark(#FFF, #E0E0E0);
+    box-shadow: 0px 0px 2px 2px #0E96D199;
 }
 
 .pf-c-login__main-footer-links-item {
@@ -92,8 +91,7 @@
     padding-top: 12px;
 }
 .pf-c-login__main-footer-links-item:hover {
-    box-shadow: 0px 0px 5px 5px #9B7FDB99;
-    color: light-dark(#FFF, #E0E0E0);
+    box-shadow: 0px 0px 2px 2px #9B7FDB99;
 }
 .pf-c-form__label-text {
     color: light-dark(#000, #FFF);

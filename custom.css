@@ -74,7 +74,7 @@
     padding: 0px;
     box-shadow: 0px 2px 6px 0px #00000033;
     color: light-dark(#000, #E0E0E0);
-    background: #FFF;
+    background: light-dark(#FFF, #1E1E1E);
     min-height: 48px;
 }
 .pf-c-button.pf-m-block:hover {
@@ -85,8 +85,7 @@
     border: none;
     border-radius: 50px;
     color: light-dark(#000, #FFF);
-    background: #FFF;
-    background-color: #FFF;
+    background: light-dark(#FFF, #1E1E1E);
     box-shadow: 0px 2px 6px 0px #00000033;
     padding-top: 12px;
 }
@@ -119,4 +118,9 @@
 /* google logo spacing */
 .pf-c-button__icon.pf-m-start {
     margin-right: 6px;
+}
+
+/*** Login button ***/
+.pf-c-form__group.pf-m-action {
+    overflow: visible;
 }

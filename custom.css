@@ -105,6 +105,9 @@
 .pf-c-button__icon.pf-m-start {
     display: flex;
 }
+.pf-c-login__main-footer-links {
+    padding: 0px 16px 40px 16px;
+}
 
 .pf-c-login__main-footer-links-item {
     padding: 4px;

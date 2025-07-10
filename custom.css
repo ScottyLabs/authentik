@@ -129,7 +129,7 @@
 }
 .pf-c-form {
     padding: 0px 16px 16px;
-    gap: 20px;
+    display: block;
 }
 
 

@@ -124,3 +124,9 @@
 .pf-c-form__group.pf-m-action {
     overflow: visible;
 }
+.pf-c-login__main-body {
+    padding: 0px 16px 0px 16px;
+}
+.pf-c-form {
+    padding: 0px 16px 16px 0px;
+}

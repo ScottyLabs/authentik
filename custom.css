@@ -107,5 +107,8 @@
 }
 
 .pf-c-login__main-footer-links-item {
-    padding-top: 4px;
+    padding: 4px;
+    justify-content: center;
+    display: flex;
+    width: 90%;
 }

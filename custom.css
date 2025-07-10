@@ -98,5 +98,12 @@
 }
 
 .pf-c-button.pf-m-link {
-    align-items: center;;
+    align-items: center;
+}
+.pf-c-button__icon.pf-m-start {
+    display: flex;
+}
+
+.pf-c-login__main-footer-links-item {
+    padding-top: 0px;
 }

@@ -115,3 +115,8 @@
     display: flex;
     width: 90%;
 }
+
+/* google logo spacing */
+.pf-c-button__icon.pf-m-start {
+    margin-right: 6px;
+}

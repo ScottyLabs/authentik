@@ -1,28 +1,7 @@
-
-
-/*  set var var(--ak-dark-foreground) to #000 */
-:root {
-    --ak-dark-foreground: #000;
-    --ak-dark-background: #FFF;
-    --ak-light-foreground: #FFF;
-    --ak-light-background: #2C2C2C;
-    --ak-light-primary: #1E1E1E;
-    --ak-light-secondary: #2C2C2C;
-    --ak-light-tertiary: #3C3C3C;
-    --ak-light-accent: #9B7FDB;
-    --ak-light-accent-secondary: #0E96D1;
-    --ak-light-accent-tertiary: #E0E0E0;
-}
-
 .pf-c-login__main-footer-links-item img, .pf-c-login__main-footer-links-item .fas
 {
     filter: invert(0);
 }
-
-.pf-c-form__group.pf-m-action {
-    margin-top: 6px;
-}
-
 .pf-c-login__main {
     border: none;
     border-radius: 12px;
@@ -30,7 +9,6 @@
     box-shadow: 0px 2px 6px 0px #00000033;
     max-width: 325px;
     background-color: light-dark(#FFF, #2C2C2C);
-    position: relative;
     align-self: center;
 }
 
@@ -130,4 +108,15 @@
 }
 .pf-c-form {
     padding: 0px 16px 16px;
+}
+
+
+/* welcome spacing */
+.pf-c-login__main-header {
+    padding: 8px 32px 6px 32px;
+}
+.pf-c-title.pf-m-3xl {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: Satoshi;
 }

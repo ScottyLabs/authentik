@@ -92,6 +92,7 @@
 .pf-c-page__drawer {
     background-color: light-dark(#FFF, #1E1E1E);
     background-image: var(--ak-flow-background);
+    background-size: cover;
 }
 
 /*** Google button ***/

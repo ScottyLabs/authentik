@@ -104,13 +104,15 @@
 }
 
 .pf-c-login__main-footer-links-item {
-    padding: 4px;
-    justify-content: center;
-    display: flex;
-    width: 90%;
+    border: none;
+    border-radius: 50px;
+    color: light-dark(#000, #FFF);
+    background: light-dark(#FFF, #1E1E1E);
+    box-shadow: 0px 2px 6px 0px #00000033;
+    min-height: 48px;
 }
 
-/* google logo spacing */
+/* Google logo spacing */
 .pf-c-button__icon.pf-m-start {
     margin-right: 6px;
 }
@@ -120,14 +122,14 @@
     overflow: visible;
 }
 .pf-c-login__main-body {
-    padding: 0px 16px 16px;
+    padding: 0px 16px 0px 16px;
 }
 .pf-c-form {
     padding: 0px 16px 16px;
 }
 
 
-/* welcome spacing */
+/* Welcome spacing */
 .pf-c-login__main-header {
     padding: 72px 48px 16px;
 }

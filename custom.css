@@ -142,3 +142,8 @@
     font-weight: 600;
     font-family: Satoshi;
 }
+
+/* Welcome text */
+header.pf-c-login__main-header {
+    padding: 20px 32px 6px 32px;
+}

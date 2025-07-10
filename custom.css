@@ -38,9 +38,9 @@
     background-color: light-dark(#FFF, #1E1E1E);
 }
 
-.pf-c-list.pf-m-inline {
+/* .pf-c-list.pf-m-inline {
     display: none;
-}
+} */
 
 /* .pf-c-background-image {
     display: none;
@@ -125,8 +125,8 @@
     overflow: visible;
 }
 .pf-c-login__main-body {
-    padding: 0px 16px 0px 16px;
+    padding: 16px;
 }
 .pf-c-form {
-    padding: 0px 16px 16px 0px;
+    padding: 16px;
 }

@@ -1,6 +1,5 @@
 @import url("css/satoshi.css");
 
-/*  set var var(--ak-dark-foreground) to #000 */
 :root {
     --ak-dark-foreground: #000;
     --ak-dark-background: #FFF;
@@ -104,6 +103,10 @@
 }
 
 .pf-c-login__main-footer-links-item {
+    padding: 4px;
+    justify-content: center;
+    display: flex;
+    width: 90%;
     border: none;
     border-radius: 50px;
     color: light-dark(#000, #FFF);

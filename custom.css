@@ -88,6 +88,12 @@
     align-items: center;
 }
 
+/* Background color and image */
+.pf-c-page__drawer {
+    background-color: light-dark(#FFF, #1E1E1E);
+    background-image: var(--ak-flow-background);
+}
+
 /*** Google button ***/
 .pf-c-button__icon.pf-m-start {
     display: flex;

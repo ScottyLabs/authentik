@@ -132,7 +132,6 @@
     display: block;
 }
 
-
 /* Welcome spacing */
 .pf-c-login__main-header {
     padding: 72px 48px 16px;
@@ -146,4 +145,13 @@
 /* Welcome text */
 header.pf-c-login__main-header {
     padding: 20px 32px 6px 32px;
+}
+
+/* To center veritically */
+.ak-login-container {
+    justify-content: center;
+}
+
+.pf-c-login__main {
+    display: none;
 }

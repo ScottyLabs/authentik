@@ -100,6 +100,8 @@
 .pf-c-button.pf-m-link {
     align-items: center;
 }
+
+/*** Google button ***/
 .pf-c-button__icon.pf-m-start {
     display: flex;
 }

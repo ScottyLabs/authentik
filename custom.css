@@ -119,12 +119,17 @@ header.pf-c-login__main-header {
 /* Login button hover */
 .pf-c-button.pf-m-block:hover {
     box-shadow: 0px 0px 2px 2px #0E96D199;
+    color: #0E96D1;
 }
 
 /*** Google login button ***/
 /* Center the logo and text in the button */
 .pf-c-button.pf-m-link {
     align-items: center;
+    color: light-dark(#000, #FFF);
+}
+.pf-c-button.pf-m-link:hover {
+    color: #9B7FDB;
 }
 .pf-c-button__icon.pf-m-start {
     display: flex;
@@ -145,3 +150,5 @@ header.pf-c-login__main-header {
 .pf-c-login__main-footer-links-item:hover {
     box-shadow: 0px 0px 2px 2px #9B7FDB99;
 }
+
+

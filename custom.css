@@ -164,3 +164,14 @@ header.pf-c-login__main-header {
 .pf-c-login__footer {
     display: none;
 }
+
+.pf-c-button.pf-m-link {
+    color: is-dark(#FFF, #000);
+}
+.pf-c-button.pf-m-link {
+    color: #9B7FDB;
+}
+
+.pf-c-button.pf-m-block:hover {
+    color: #0E96D1;
+}

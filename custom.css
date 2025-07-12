@@ -151,7 +151,7 @@ header.pf-c-login__main-header {
 /* Center the logo and text in the button */
 .pf-c-button.pf-m-link {
     align-items: center;
-    color: is-dark(#FFF, #000);
+    color: light-dark(#000, #FFF);
 }
 .pf-c-button.pf-m-link:hover {
     color: #9B7FDB;

@@ -156,3 +156,10 @@ header.pf-c-login__main-header {
 .pf-c-login__footer {
     display: none;
 }
+
+/* Border for the username input field */
+.pf-c-form-control {
+    border: gray;
+    border-width: 2px;
+    border-style: solid;
+}

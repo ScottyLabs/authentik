@@ -9,18 +9,8 @@
     font-style: normal;
   }
 
-/* Color variables (DO WE NEED THIS?) */
+/* Color variables */
 :root {
-    --ak-dark-foreground: #000;
-    --ak-dark-background: #FFF;
-    --ak-light-foreground: #FFF;
-    --ak-light-background: #2C2C2C;
-    --ak-light-primary: #1E1E1E;
-    --ak-light-secondary: #2C2C2C;
-    --ak-light-tertiary: #3C3C3C;
-    --ak-light-accent: #9B7FDB;
-    --ak-light-accent-secondary: #0E96D1;
-    --ak-light-accent-tertiary: #E0E0E0;
     color-scheme: light dark;
 }
 

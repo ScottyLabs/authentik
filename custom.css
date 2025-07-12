@@ -14,7 +14,14 @@
     color-scheme: light dark;
 }
 
-/**** main login box at center of screen containing login components ****/
+/* Background color and image */
+.pf-c-page__drawer {
+    background-color: light-dark(#FFF, #1E1E1E);
+    background-image: var(--ak-flow-background);
+    background-size: cover;
+}
+
+/* Main login box */
 .pf-c-login__main {
     border: none;
     border-radius: 12px;
@@ -25,23 +32,44 @@
     align-self: center;
 }
 
-/*** Login with email section ***/
-.pf-c-login__main.pf-c-login__main-body {
-    padding: 0;
+/* Center main login box vertically */
+.ak-login-container {
+    justify-content: center;
 }
-/** Welcome text **/
+.pf-c-login__footer {
+    display: none;
+}
+
+/* ScottyLabs logo spacing */
+.pf-c-login__main-header {
+    padding: 72px 48px 16px;
+}
+
+/*** Welcome text ***/
+header.pf-c-login__main-header {
+    padding: 20px 32px 6px 32px;
+}
 .pf-c-title {
     color: light-dark(#000, #FFF);
 }
+.pf-c-title.pf-m-3xl {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: Satoshi, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
 
-/* Email box and label */
+/*** Email form section ***/
+/* No padding on the login with email section */
+.pf-c-login__main.pf-c-login__main-body {
+    padding: 0;
+}
+
+/* Email input box */
 .pf-c-form__group {
     color: light-dark(#000, #FFF);
     padding-bottom: 0px;
     padding-top: 12px;
 }
-
-/* Email box itself */
 .pf-c-form-control {
     border: none;
     border-radius: 12px;
@@ -52,6 +80,33 @@
     height: 24px;
 }
 
+/* Email input label */
+.pf-c-form__label-text {
+    color: light-dark(#000, #FFF);
+}
+
+/* Email input field */
+.pf-c-form-control {
+    border: gray;
+    border-width: 2px;
+    border-style: solid;
+    color: white;
+}
+
+/* Footer buttons */
+.pf-c-login__main-footer-links-item {
+    border: none;
+    border-radius: 50px;
+    color: light-dark(#000, #FFF);
+    background: light-dark(#FFF, #1E1E1E);
+    box-shadow: 0px 2px 6px 0px #00000033;
+    padding-top: 12px;
+}
+.pf-c-login__main-footer-links {
+    padding: 0px 16px 40px 16px;
+}
+
+/*** Login button ***/
 /* Login button */
 .pf-c-button.pf-m-block {
     border: none;
@@ -62,56 +117,23 @@
     background: light-dark(#FFF, #1E1E1E);
     min-height: 48px;
 }
-/* hover... */
+.pf-c-form__group.pf-m-action {
+    overflow: visible;
+}
+.pf-c-login__main-body {
+    padding: 0px 16px 0px 16px;
+}
+.pf-c-form {
+    padding: 0px 16px 16px;
+    display: block;
+}
+
+/* Login button hover */
 .pf-c-button.pf-m-block:hover {
     box-shadow: 0px 0px 2px 2px #0E96D199;
 }
-/* Footer links (including google signin) */
-.pf-c-login__main-footer-links-item {
-    border: none;
-    border-radius: 50px;
-    color: light-dark(#000, #FFF);
-    background: light-dark(#FFF, #1E1E1E);
-    box-shadow: 0px 2px 6px 0px #00000033;
-    padding-top: 12px;
-}
 
-/* hover... */
-.pf-c-login__main-footer-links-item:hover {
-    box-shadow: 0px 0px 2px 2px #9B7FDB99;
-}
-
-/* login email input label */
-.pf-c-form__label-text {
-    color: light-dark(#000, #FFF);
-}
-
-
-
-/* Background color and image */
-.pf-c-page__drawer {
-    background-color: light-dark(#FFF, #1E1E1E);
-    background-image: var(--ak-flow-background);
-    background-size: cover;
-}
-
-/*** Google button ***/
-.pf-c-button.pf-m-link {
-    align-items: center;
-}
-.pf-c-button__icon.pf-m-start {
-    display: flex;
-}
-.pf-c-login__main-footer-links {
-    padding: 0px 16px 40px 16px;
-}
-
-/* Invert the google icon in dark mode */
-.pf-c-login__main-footer-links-item img, .pf-c-login__main-footer-links-item .fas
-{
-    filter: light-dark(invert(0), invert(1));
-}
-
+/*** Google login button ***/
 .pf-c-login__main-footer-links-item {
     padding: 4px;
     justify-content: center;
@@ -125,51 +147,26 @@
     min-height: 48px;
 }
 
+/* Center the logo and text in the button */
+.pf-c-button.pf-m-link {
+    align-items: center;
+}
+.pf-c-button__icon.pf-m-start {
+    display: flex;
+}
+
+/* Invert the Google icon in dark mode */
+.pf-c-login__main-footer-links-item img, .pf-c-login__main-footer-links-item .fas
+{
+    filter: light-dark(invert(0), invert(1));
+}
+
 /* Google logo spacing */
 .pf-c-button__icon.pf-m-start {
     margin-right: 6px;
 }
 
-/*** Login button ***/
-.pf-c-form__group.pf-m-action {
-    overflow: visible;
-}
-.pf-c-login__main-body {
-    padding: 0px 16px 0px 16px;
-}
-.pf-c-form {
-    padding: 0px 16px 16px;
-    display: block;
-}
-
-/* Welcome spacing */
-.pf-c-login__main-header {
-    padding: 72px 48px 16px;
-}
-.pf-c-title.pf-m-3xl {
-    font-size: 3rem;
-    font-weight: 600;
-    font-family: Satoshi, system-ui, Avenir, Helvetica, Arial, sans-serif;
-}
-
-/* Welcome text */
-header.pf-c-login__main-header {
-    padding: 20px 32px 6px 32px;
-}
-
-/* To center veritically */
-.ak-login-container {
-    justify-content: center;
-}
-
-.pf-c-login__footer {
-    display: none;
-}
-
-/* Username input field */
-.pf-c-form-control {
-    border: gray;
-    border-width: 2px;
-    border-style: solid;
-    color: white;
+/* Google login button hover */
+.pf-c-login__main-footer-links-item:hover {
+    box-shadow: 0px 0px 2px 2px #9B7FDB99;
 }

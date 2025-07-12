@@ -38,6 +38,7 @@
 .pf-c-form__group {
     color: light-dark(#000, #FFF);
     padding-bottom: 0px;
+    padding-top: 12px;
 }
 
 /* Email box itself */
@@ -165,9 +166,10 @@ header.pf-c-login__main-header {
     display: none;
 }
 
-/* Border for the username input field */
+/* Username input field */
 .pf-c-form-control {
     border: gray;
     border-width: 2px;
     border-style: solid;
+    color: white;
 }

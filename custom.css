@@ -1,3 +1,4 @@
+/* Configure font */
 @font-face {
     font-family: 'Satoshi';
     src: url('fonts/Satoshi-Medium.woff2') format('woff2'),
@@ -6,8 +7,10 @@
     font-weight: 500;
     font-display: swap;
     font-style: normal;
+    color-scheme: light dark;
   }
 
+/* Color variables (DO WE NEED THIS?) */
 :root {
     --ak-dark-foreground: #000;
     --ak-dark-background: #FFF;
@@ -101,6 +104,12 @@
 }
 .pf-c-login__main-footer-links {
     padding: 0px 16px 40px 16px;
+}
+
+/* Invert the google icon in dark mode */
+.pf-c-login__main-footer-links-item img, .pf-c-login__main-footer-links-item .fas
+{
+    filter: light-dark(invert(0), invert(1));
 }
 
 .pf-c-login__main-footer-links-item {

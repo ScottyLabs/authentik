@@ -9,11 +9,12 @@
     font-style: normal;
   }
 
-/* Color variables */
+/* Enables light and dark mode */
 :root {
     color-scheme: light dark;
 }
 
+/**** main login box at center of screen containing login components ****/
 .pf-c-login__main {
     border: none;
     border-radius: 12px;
@@ -24,19 +25,22 @@
     align-self: center;
 }
 
+/*** Login with email section ***/
 .pf-c-login__main.pf-c-login__main-body {
     padding: 0;
 }
-
+/** Welcome text **/
 .pf-c-title {
     color: light-dark(#000, #FFF);
 }
 
+/* Email box and label */
 .pf-c-form__group {
     color: light-dark(#000, #FFF);
     padding-bottom: 0px;
 }
 
+/* Email box itself */
 .pf-c-form-control {
     border: none;
     border-radius: 12px;
@@ -47,6 +51,7 @@
     height: 24px;
 }
 
+/* Login button */
 .pf-c-button.pf-m-block {
     border: none;
     border-radius: 50px;
@@ -56,11 +61,11 @@
     background: light-dark(#FFF, #1E1E1E);
     min-height: 48px;
 }
-
+/* hover... */
 .pf-c-button.pf-m-block:hover {
     box-shadow: 0px 0px 2px 2px #0E96D199;
 }
-
+/* Footer links (including google signin) */
 .pf-c-login__main-footer-links-item {
     border: none;
     border-radius: 50px;
@@ -70,16 +75,17 @@
     padding-top: 12px;
 }
 
+/* hover... */
 .pf-c-login__main-footer-links-item:hover {
     box-shadow: 0px 0px 2px 2px #9B7FDB99;
 }
+
+/* login email input label */
 .pf-c-form__label-text {
     color: light-dark(#000, #FFF);
 }
 
-.pf-c-button.pf-m-link {
-    align-items: center;
-}
+
 
 /* Background color and image */
 .pf-c-page__drawer {
@@ -89,6 +95,9 @@
 }
 
 /*** Google button ***/
+.pf-c-button.pf-m-link {
+    align-items: center;
+}
 .pf-c-button__icon.pf-m-start {
     display: flex;
 }

@@ -78,7 +78,7 @@ header.pf-c-login__main-header {
     background-color: light-dark(#FFF, #2C2C2C);
     padding-left: 12px;
     height: 24px;
-    color: white;
+    color: light-dark(black, white);
 }
 
 /* Email input label */

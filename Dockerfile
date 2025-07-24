@@ -1,4 +1,4 @@
-FROM ghcr.io/goauthentik/server:latest
+FROM ghcr.io/goauthentik/server:2025.6.4
 
 COPY flow_background.png /web/dist/assets/images/slabs_flow_background.png
 COPY icon.png /web/dist/assets/icons/slabs_icon.png

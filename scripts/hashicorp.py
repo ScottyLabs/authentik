@@ -7,9 +7,6 @@ load_dotenv()
 
 
 class HashicorpManager:
-    ADMIN_SUFFIX = "admins"
-    DEVELOPER_SUFFIX = "devs"
-
     def __init__(self, project_name):
         self.project_name = project_name
         self.token = os.getenv("HASHICORP_API_TOKEN")
@@ -33,7 +30,7 @@ path "/ScottyLabs/data/{project_name}/*" {{
     def create_admin_policy(self, project_name):
         print(f"Creating admin policy for {project_name}")
         response = requests.post(
-            f"{self.api_url}/v1/sys/policy/{project_name}-{self.ADMIN_SUFFIX}",
+            f"{self.api_url}/v1/sys/policy/{project_name}-{Utils.ADMIN_SUFFIX}",
             json={"policy": self.admin_policy},
             headers={"X-Vault-Token": self.token},
         )
@@ -42,13 +39,19 @@ path "/ScottyLabs/data/{project_name}/*" {{
     def create_developer_policy(self, project_name):
         print(f"Creating developer policy for {project_name}")
         response = requests.post(
-            f"{self.api_url}/v1/sys/policy/{project_name}-{self.DEVELOPER_SUFFIX}",
+            f"{self.api_url}/v1/sys/policy/{project_name}-{Utils.DEVELOPER_SUFFIX}",
             json={"policy": self.developer_policy},
             headers={"X-Vault-Token": self.token},
         )
         Utils.print_response(response)
 
-    def get_group_id(self, project_name, suffix):
+    def create_admin_group(self, project_name):
+        return self.create_group(project_name, Utils.ADMIN_SUFFIX)
+
+    def create_developer_group(self, project_name):
+        return self.create_group(project_name, Utils.DEVELOPER_SUFFIX)
+
+    def create_group(self, project_name, suffix):
         # First try to get the group ID if the group already exists
         response = requests.get(
             f"{self.api_url}/v1/identity/group/name/{project_name}-{suffix}",
@@ -77,13 +80,13 @@ path "/ScottyLabs/data/{project_name}/*" {{
         )
         return response.json()["data"]["oidc/"]["accessor"]
 
-    def create_group(self, project_name, suffix, group_id):
+    def create_group_alias(self, group_alias, group_id):
         print(f"Group ID: {group_id}")
-        print(f"Creating group alias for {project_name}-{suffix}")
+        print(f"Creating group alias for {group_alias}")
         response = requests.post(
             f"{self.api_url}/v1/identity/group-alias",
             json={
-                "name": f"{project_name}-{suffix}",
+                "name": group_alias,
                 "mount_accessor": self.get_oidc_mount_accessor(),
                 "canonical_id": group_id,
             },

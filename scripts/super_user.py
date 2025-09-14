@@ -6,18 +6,7 @@ load_dotenv()
 
 token = os.getenv("AUTHENTIK_API_TOKEN")
 url = os.getenv("AUTHENTIK_API_URL")
-super_user_group_name = os.getenv("SUPER_USER_GROUP_NAME")
-
-
-def add_user_to_super_user(user_andrew_id):
-    add_user_to_super_user_url = (
-        f"{url}/api/v3/core/groups/{super_user_group_name}/add_user/"
-    )
-    requests.post(
-        add_user_to_super_user_url,
-        json={"pk": user_andrew_id},
-        headers={"Authorization": f"Bearer {token}"},
-    )
+super_user_group_id = os.getenv("SUPER_USER_GROUP_ID")
 
 
 def get_user(user_andrew_id):
@@ -27,6 +16,23 @@ def get_user(user_andrew_id):
         headers={"Authorization": f"Bearer {token}"},
     )
     return response.json()
+
+
+def add_user_to_super_user(user_uuid):
+    add_user_to_super_user_url = (
+        f"{url}/api/v3/core/groups/{super_user_group_id}/add_user/"
+    )
+    response = requests.post(
+        add_user_to_super_user_url,
+        json={"pk": user_uuid},
+        headers={"Authorization": f"Bearer {token}"},
+    )
+    if not response.ok:
+        print(f"ERROR: Failed to add user {user_uuid} to super user group")
+        print(response)
+        return
+
+    print(f"SUCCESS: Added user {user_uuid} to super user group")
 
 
 if __name__ == "__main__":
@@ -44,4 +50,3 @@ if __name__ == "__main__":
 
     user_uuid = user_response["results"][0]["pk"]
     add_user_to_super_user(user_uuid)
-    print(f"SUCCESS: Added user {andrew_id} to super user group")

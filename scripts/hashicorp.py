@@ -1,6 +1,7 @@
 import requests
 import os
 from dotenv import load_dotenv
+from utils import Utils
 
 load_dotenv()
 
@@ -29,14 +30,6 @@ path "/ScottyLabs/data/{project_name}/*" {{
 }}
 """.format(project_name=project_name)
 
-    def _print_response(self, response):
-        print(response)
-        try:
-            print(response.json())
-        except Exception:
-            pass
-        print()
-
     def create_admin_policy(self, project_name):
         print(f"Creating admin policy for {project_name}")
         response = requests.post(
@@ -44,7 +37,7 @@ path "/ScottyLabs/data/{project_name}/*" {{
             json={"policy": self.admin_policy},
             headers={"X-Vault-Token": self.token},
         )
-        self._print_response(response)
+        Utils.print_response(response)
 
     def create_developer_policy(self, project_name):
         print(f"Creating developer policy for {project_name}")
@@ -53,7 +46,7 @@ path "/ScottyLabs/data/{project_name}/*" {{
             json={"policy": self.developer_policy},
             headers={"X-Vault-Token": self.token},
         )
-        self._print_response(response)
+        Utils.print_response(response)
 
     def get_group_id(self, project_name, suffix):
         # First try to get the group ID if the group already exists
@@ -96,4 +89,4 @@ path "/ScottyLabs/data/{project_name}/*" {{
             },
             headers={"X-Vault-Token": self.token},
         )
-        self._print_response(response)
+        Utils.print_response(response)
